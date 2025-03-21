@@ -25,9 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "D:\\Sushant Itvedant\\angularbatch\\my_store\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css",
+              "D:\\Sushant Itvedant\\angularbatch\\my_store\\node_modules\\bootstrap-icons\\font\\bootstrap-icons.min.css"
             ],
-            "scripts": []
+            "scripts": ["D:\\Sushant Itvedant\\angularbatch\\my_store\\node_modules\\bootstrap\\dist\\js\\bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -51,7 +53,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"

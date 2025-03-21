@@ -1,0 +1,46 @@
+
+
+
+<div class="container" *ngIf="(myobservable$ |async) as product">
+    <div class="row-m-4">
+        <div class="col-lg-4">          
+        </div>
+    </div>
+    <div class="row m-4">
+        <div class="col-lg-6">
+            <img [src]="product.imageUrl" width="45%">
+        </div>
+   <div class="col-lg-6">
+    <h3>{{product.name}}</h3>
+    <h4>{{product.price}}</h4>
+    <h5>{{product.description}}</h5>
+    <button class="btn btn-primary"(click)="goBack()">Back</button>
+    <div class="row-m-4">
+        <div class="col-lg-6">
+            <button class="btn btn-warning" [routerLink]="['/product',product.id,'edit']">Edit</button>
+        </div>
+        <div class="col-lg-6">
+            <button class="btn btn-warning" (click)="deleteProduct(product.id)">Delete</button>
+        </div>
+    </div>
+   </div>
+
+   
+
+   <div class="row-m-4">
+    <div class="col-md-3">
+        <button class="btn btn-primary my-2" [routerLink]="['/product',product.id,'review']">Review</button>
+    </div>
+   </div>
+
+   <div class="row-m-4">
+    <div class="col-md-3">
+        <button class="btn btn-primary" [routerLink]="['/product',product.id,'notification']">Notification</button>
+    </div>
+   </div>
+
+   <div class="row-m-4">
+    <router-outlet></router-outlet>
+   </div>
+</div>
+</div>

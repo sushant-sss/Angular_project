@@ -1,0 +1,53 @@
+{
+  "product": [
+    {
+      "name": "Apple 16",
+      "price": 14999,
+      "description": "ANC (up to 32 dB) - Listen to your playlists just the way you like it—without any background.",
+      "imageUrl": "/assets/images/img1.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Noise Buds N1 Pro in-Ear Truly Wireless Earbuds with Metallic.",
+      "price": 1499,
+      "imageUrl": "/assets/images/img2.jpg",
+      "description": "ANC (up to 32 dB) - Listen to your playlists just the way you like it—without any background."
+    },
+    {
+      "id": "3",
+      "name": "Noise Newly Launched Halo 2 Smart Watch 1st Ever, 1.43",
+      "price": 4499,
+      "imageUrl": "/assets/images/img3.jpg",
+      "description": "Navigate your world with effortless precision and style.Customised Transition."
+    },
+    {
+      "id": "4",
+      "name": "HP 15, 13th Gen Intel Core i5-1334U, 16GB DDR4, 512GB SSD.",
+      "price": 54990,
+      "imageUrl": "/assets/images/img4.jpg",
+      "description": "10-core 13th Gen Intel Core i5-1334 Unleash superior performance with a processor."
+    },
+    {
+      "id": "5",
+      "name": "Sony Bravia 108 cm (43 inches) 4K Ultra HD Smart LED Google.",
+      "price": 59840,
+      "imageUrl": "/assets/images/img5.jpg",
+      "description": "4K Ultra HD (3840 x 2160) | Refresh Rate: 60 Hertz | 178 Degree wide viewing."
+    },
+    {
+      "id": "6",
+      "name": "Sony PS5 Digital Gaming Console- Fortnite Bundle (Slim)",
+      "price": 44790,
+      "imageUrl": "/assets/images/img6.jpg",
+      "description": "PlayStation 5 Experience lightning fast loading with an ultra-high speed SSD."
+    },
+    {
+      "id": "f932",
+      "name": "apple",
+      "price": 1000,
+      "description": "apple",
+      "imageUrl": "/assets/images/img1.jpg"
+    }
+  ]
+}

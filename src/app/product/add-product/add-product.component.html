@@ -1,0 +1,35 @@
+<div class="container">
+  <form [formGroup]="addForm" (ngSubmit)="addProduct()">
+      <div class="mb-3">
+          <label for="'name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" formControlName="name">
+      </div>
+      <div class="alert alert-danger" *ngIf="f['name'].invalid && f['name'].touched && f['name'].hasError('required')">
+          name cannot be provide
+      </div>
+      <div class="alert alert-danger" *ngIf="f['name'].invalid && f['name'].dirty && f['name'].hasError('minlength')">
+          name should have atleast 5 characters
+      </div>
+      <!-- forbidden -->
+       <div class="alert alert-danger" *ngIf="f['name'].invalid && f['name'].dirty && f['name'].hasError('forbidden')">
+        apple name not allowed ........
+       </div>
+       <!-- forbidden end-->
+      <!--price-->
+      <div class="mb-3">
+          <label for="'name" class="form-label">price</label>
+          <input type="number" id="price" class="form-control" formControlName="price">
+      </div>
+      <div class="alert alert-danger" *ngIf="f['price'].invalid && f['price'].touched">
+          price cannot be empty
+      </div>
+      <div class="mb-3">
+          <label for="'name" class="form-label">description</label>
+          <input type="text" id="description" class="form-control" formControlName="description">
+      </div>
+      <div>
+          <button class="btn btn-primary">submit</button>
+      </div>
+      <input type="hidden" formControlName="imageUrl">
+  </form>
+</div>
