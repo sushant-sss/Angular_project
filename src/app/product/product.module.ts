@@ -20,7 +20,7 @@ const routes:Routes=[
     {path:'notification',component:NotificationComponent}
   ]
 },
-{path:"products/:id/edit",component: UpdateProductComponent}
+{path:"product/:id/edit",component: UpdateProductComponent}
 ]
 
 @NgModule({

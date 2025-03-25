@@ -41,13 +41,6 @@
       "price": 44790,
       "imageUrl": "/assets/images/img6.jpg",
       "description": "PlayStation 5 Experience lightning fast loading with an ultra-high speed SSD."
-    },
-    {
-      "id": "f932",
-      "name": "apple",
-      "price": 1000,
-      "description": "apple",
-      "imageUrl": "/assets/images/img1.jpg"
     }
   ]
 }
